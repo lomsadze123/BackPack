@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('backpack.jpg');
+    overflow: hidden;
+}
+
+
+img {
+    position: absolute;
+    top: 170px;
+    right: 90px;
+    width: 100px;
+    opacity: 0.8;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    width: 450px;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 15px;
+    box-shadow: 5px 5px 10px -4px black;
+    transition: 2.5s;
+    transform: scaleX(-1);
+}
+
+h1:hover {
+    color: brown;
+    cursor: not-allowed;
+    transform: scaleX(1);
+}
+
+h2 {
+    color: white;
+    font-size: 45px;
+    margin-left: 70px;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    margin-top: 110px;
+}
+
+h2:hover {
+    color: silver;
+    cursor: pointer;
+    font-size: 50px;
+    text-shadow: 5px 5px black;
+}
+
+.par {
+    display: flex;
+    justify-content: center;
+    animation: ex1 9s linear infinite;
+}
+
+span {
+    margin-left: 120px;
+}
+
+p {
+    color: rgb(245, 42, 42);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    width: 440px;
+}
+
+@keyframes ex1 {
+    0% {
+      transform: translateY(100px);
+    }
+    50% {
+      transform: translateY(-1000px);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+}
+a {
+    position: relative;
+    color: white;
+    float: right;
+    top: 190px;
+    right: 108px;
+    z-index: 1;
+    opacity: 0;
+    color: rgb(236, 61, 30);
+    font-size: 25px;
+    transition: 2s;
+    height: 150px;
+    text-decoration: none;
+    text-shadow: 5px 5px black;
+}
+
+a:hover {
+    opacity: 1;
+    top:120px;
+}
